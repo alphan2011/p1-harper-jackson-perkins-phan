@@ -82,6 +82,20 @@ header.about section {
   max-width: 500px;
   text-align: center;
 }
+#activities-header {
+  background-image: url("../images/acthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#activities-header .section-center {
+  margin: auto;
+}
+#activities-header section {
+  background-color: #105adc;
+  padding: 2rem;
+  max-width: 500px;
+  text-align: center;
+}
 main .container {
   margin: 8rem auto;
 }
@@ -167,6 +181,20 @@ main .video iframe {
 .about-products {
   margin: 55px 40px 40px 50px;
 }
+
+
+
+#activity figure img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#activity figcaption {
+  padding-bottom: 5%;
+  font-weight: bold;
+}
+
+
 footer {
   background-color: #80d8fe;
 }
