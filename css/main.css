@@ -24,6 +24,9 @@ h3 {
   color: #ffffff;
   font-weight: 700;
 }
+h4 {
+  font-weight: bold;
+}
 .btn-info {
   background-color: #333333;
   border-color: #333333;
@@ -91,7 +94,7 @@ header.about section {
   margin: auto;
 }
 #activities-header section {
-  background-color: #105adc;
+  background-color: rgba(60, 90, 220, 0.8);
   padding: 2rem;
   max-width: 500px;
   text-align: center;
@@ -181,20 +184,14 @@ main .video iframe {
 .about-products {
   margin: 55px 40px 40px 50px;
 }
-
-
-
 #activity figure img {
   width: 100%;
   margin-bottom: 0;
 }
-
 #activity figcaption {
   padding-bottom: 5%;
   font-weight: bold;
 }
-
-
 footer {
   background-color: #80d8fe;
 }
