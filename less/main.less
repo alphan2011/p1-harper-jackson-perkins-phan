@@ -68,7 +68,7 @@ header {
   }
 
   &.about {
-    background-image: url('../images/curved-layers-colored-papers-empty-background.jpeg');
+    background-image: url("../images/curved-layers-colored-papers-empty-background.jpeg");
     section {
       background-color: @red-rgb;
     }
@@ -136,7 +136,9 @@ main {
     z-index: 5;
     color: @white;
 
-    p { width: 80%; }
+    p {
+      width: 80%;
+    }
   }
 }
 
@@ -149,46 +151,48 @@ main {
     z-index: 5;
     color: @white;
 
-    p { width: 80%; }
+    p {
+      width: 80%;
+    }
 
     &.made {
-      .trans-bg( rgba( @yellow, .5 ) );
+      .trans-bg( rgba( @yellow, 0.5 ) );
       background-image: url("../images/recycling-concept.jpeg");
-      color: #fff;
+      color: @white;
     }
 
     &.local {
-      .trans-bg( rgba( @dark-blue, .5 ) );
-      color: #fff;
+      .trans-bg( rgba( @dark-blue, 0.5 ) );
+      color: @white;
     }
 
     &.its-made {
-      .trans-bg( rgba( @light-grey, .5 ) );
+      .trans-bg( rgba( @light-grey, 0.5 ) );
       background-image: url("../images/recycling-concept.jpeg");
-      color: #fff;
+      color: @white;
     }
 
     &.made-contact {
-      .trans-bg( rgba( @dark-blue, .5 ) );
+      .trans-bg( rgba( @dark-blue, 0.5 ) );
       background-image: url("../images/high-contrast.jpg");
-      color: #fff;
+      color: @white;
     }
   }
 }
 
 .quality {
-  .trans-bg( rgba( @green, .5 ) );
+  .trans-bg( rgba( @green, 0.5 ) );
   background-image: url("../images/paper-airplane.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: @white;
 }
 
 .performance {
   .trans-bg (@color: @red);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: @white;
 }
 
 // ******************* Contact Us *******************
@@ -200,20 +204,20 @@ main {
     padding: 150px;
     margin-bottom: 15px;
 
-    &.fa-map-marker-alt{
-      background-color: #92d0f1;
+    &.fa-map-marker-alt {
+      background-color: @light-blue;
     }
 
     &.fa-phone-alt {
-      background-color: #95bc4d;
+      background-color: @green;
     }
 
     &.fa-user-alt {
-      background-color: #f2d964;
+      background-color: @yellow;
     }
 
     &.fa-question {
-      background-color: #e26147;
+      background-color: @orange;
     }
   }
 
