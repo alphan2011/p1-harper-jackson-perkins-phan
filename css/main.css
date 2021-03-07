@@ -143,6 +143,28 @@ main #contact h3 {
 .about-products {
   margin: 55px 40px 40px 50px;
 }
+#activities-header {
+  background-image: url("../images/acthead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#activities-header section {
+  background-color: rgba(2, 85, 225, 0.8);
+  padding: 2rem;
+  max-width: 500px;
+  text-align: center;
+}
+#activities-header .section-center {
+  margin: auto;
+}
+#activity figure img {
+  width: 100%;
+  margin-bottom: 0;
+}
+#activity figcaption {
+  padding-bottom: 5%;
+  font-weight: bold;
+}
 footer {
   background-color: #80d8fe;
 }
