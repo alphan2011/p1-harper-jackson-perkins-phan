@@ -68,6 +68,7 @@ header {
   }
 
   &.about {
+    background-image: url('../images/curved-layers-colored-papers-empty-background.jpeg');
     section {
       background-color: @red-rgb;
     }
@@ -127,16 +128,98 @@ main {
 // ******************* About Us *******************
 .about-us {
   .about-us-content {
-    background-image: url("../images/our-story.png");
+    .trans-bg(@dark-blue-rgb);
+    background-image: url("../images/office.jpg");
     background-size: cover;
     background-position: center center;
     padding: 130px 50px;
     z-index: 5;
     color: @white;
 
-    p {
-      width: 80%;
+    p { width: 80%; }
+  }
+}
+
+.item {
+  .content {
+    .trans-bg();
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 50px;
+    z-index: 5;
+    color: @white;
+
+    p { width: 80%; }
+
+    &.made {
+      .trans-bg( rgba( @yellow, .5 ) );
+      background-image: url("../images/recycling-concept.jpeg");
+      color: #fff;
     }
+
+    &.local {
+      .trans-bg( rgba( @dark-blue, .5 ) );
+      color: #fff;
+    }
+
+    &.its-made {
+      .trans-bg( rgba( @light-grey, .5 ) );
+      background-image: url("../images/recycling-concept.jpeg");
+      color: #fff;
+    }
+
+    &.made-contact {
+      .trans-bg( rgba( @dark-blue, .5 ) );
+      background-image: url("../images/high-contrast.jpg");
+      color: #fff;
+    }
+  }
+}
+
+.quality {
+  .trans-bg( rgba( @green, .5 ) );
+  background-image: url("../images/paper-airplane.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.performance {
+  .trans-bg (@color: @red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+// ******************* Contact Us *******************
+.impulse-icons {
+  i {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    padding: 150px;
+    margin-bottom: 15px;
+
+    &.fa-map-marker-alt{
+      background-color: #92d0f1;
+    }
+
+    &.fa-phone-alt {
+      background-color: #95bc4d;
+    }
+
+    &.fa-user-alt {
+      background-color: #f2d964;
+    }
+
+    &.fa-question {
+      background-color: #e26147;
+    }
+  }
+
+  .content {
+    padding: 30px;
+    margin-bottom: 30px;
   }
 }
 
