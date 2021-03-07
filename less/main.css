@@ -116,36 +116,8 @@ main #contact h3 {
 .about-us .about-us-content p {
   width: 80%;
 }
-.item .content {
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  padding: 130px 50px;
-  z-index: 5;
-  color: #ffffff;
-}
-.item .content:after {
-  background-color: #ff0000;
-  content: '';
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  position: absolute;
-  z-index: -5;
-}
-.item .content p {
-  width: 80%;
-}
-.quality {
-  background-image: url("../images/banner_products.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.performance {
-  background-image: url("../images/banner_products.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  display: none !important;
 }
 #main-products .container {
   margin: 1rem auto;

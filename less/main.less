@@ -134,10 +134,33 @@ main {
     z-index: 5;
     color: @white;
 
-    p {
-      width: 80%;
-    }
+    p { width: 80%; }
   }
+}
+
+.item {
+  .content {
+    .trans-bg();
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 50px;
+    z-index: 5;
+    color: @white;
+
+    p { width: 80%; }
+  }
+}
+
+.quality {
+  background-image: url("../images/banner_products.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.performance {
+  background-image: url("../images/banner_products.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // ************* Main Product Page Styles ************
