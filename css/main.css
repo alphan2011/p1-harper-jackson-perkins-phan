@@ -147,6 +147,29 @@ main #contact h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.impulse-icons i {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+  padding: 150px;
+  margin-bottom: 15px;
+}
+.impulse-icons i.fa-map-marker-alt {
+  background-color: #92d0f1;
+}
+.impulse-icons i.fa-phone-alt {
+  background-color: #95bc4d;
+}
+.impulse-icons i.fa-user-alt {
+  background-color: #f2d964;
+}
+.impulse-icons i.fa-question {
+  background-color: #e26147;
+}
+.impulse-icons .content {
+  padding: 30px;
+  margin-bottom: 30px;
+}
 #main-products .container {
   margin: 1rem auto;
   max-width: 1050px;
