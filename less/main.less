@@ -68,6 +68,7 @@ header {
   }
 
   &.about {
+    background-image: url('../images/curved-layers-colored-papers-empty-background.jpeg');
     section {
       background-color: @red-rgb;
     }
@@ -127,7 +128,8 @@ main {
 // ******************* About Us *******************
 .about-us {
   .about-us-content {
-    background-image: url("../images/our-story.png");
+    .trans-bg(@dark-blue-rgb);
+    background-image: url("../images/office.jpg");
     background-size: cover;
     background-position: center center;
     padding: 130px 50px;
@@ -148,19 +150,45 @@ main {
     color: @white;
 
     p { width: 80%; }
+
+    &.made {
+      .trans-bg( rgba( @yellow, .5 ) );
+      background-image: url("../images/recycling-concept.jpeg");
+      color: #fff;
+    }
+
+    &.local {
+      .trans-bg( rgba( @dark-blue, .5 ) );
+      color: #fff;
+    }
+
+    &.its-made {
+      .trans-bg( rgba( @light-grey, .5 ) );
+      background-image: url("../images/recycling-concept.jpeg");
+      color: #fff;
+    }
+
+    &.made-contact {
+      .trans-bg( rgba( @dark-blue, .5 ) );
+      background-image: url("../images/high-contrast.jpg");
+      color: #fff;
+    }
   }
 }
 
 .quality {
-  background-image: url("../images/banner_products.jpg");
+  .trans-bg( rgba( @green, .5 ) );
+  background-image: url("../images/paper-airplane.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
 }
 
 .performance {
-  background-image: url("../images/banner_products.jpg");
+  .trans-bg (@color: @red);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
 }
 
 // ******************* Contact Us *******************

@@ -65,6 +65,9 @@ header section {
   padding: 2rem;
   max-width: 500px;
 }
+header.about {
+  background-image: url('../images/curved-layers-colored-papers-empty-background.jpeg');
+}
 header.about section {
   background-color: rgba(255, 0, 0, 0.8);
 }
@@ -106,12 +109,23 @@ main #contact h3 {
   background-image: url("../images/pam.png");
 }
 .about-us .about-us-content {
-  background-image: url("../images/our-story.png");
+  position: relative;
+  background-image: url("../images/office.jpg");
   background-size: cover;
   background-position: center center;
   padding: 130px 50px;
   z-index: 5;
   color: #ffffff;
+}
+.about-us .about-us-content:after {
+  background-color: rgba(2, 85, 225, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
 }
 .about-us .about-us-content p {
   width: 80%;
@@ -125,7 +139,7 @@ main #contact h3 {
   color: #ffffff;
 }
 .item .content:after {
-  background-color: #ff0000;
+  background-color: rgba(255, 0, 0, 0.5);
   content: '';
   right: 0;
   left: 0;
@@ -137,15 +151,103 @@ main #contact h3 {
 .item .content p {
   width: 80%;
 }
+.item .content.made {
+  position: relative;
+  z-index: 5;
+  background-image: url("../images/recycling-concept.jpeg");
+  color: #fff;
+}
+.item .content.made:after {
+  background-color: rgba(254, 226, 55, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
+}
+.item .content.local {
+  position: relative;
+  z-index: 5;
+  color: #fff;
+}
+.item .content.local:after {
+  background-color: rgba(2, 85, 225, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
+}
+.item .content.its-made {
+  position: relative;
+  z-index: 5;
+  background-image: url("../images/recycling-concept.jpeg");
+  color: #fff;
+}
+.item .content.its-made:after {
+  background-color: rgba(204, 204, 204, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
+}
+.item .content.made-contact {
+  position: relative;
+  z-index: 5;
+  background-image: url("../images/high-contrast.jpg");
+  color: #fff;
+}
+.item .content.made-contact:after {
+  background-color: rgba(2, 85, 225, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
+}
 .quality {
-  background-image: url("../images/banner_products.jpg");
+  position: relative;
+  z-index: 5;
+  background-image: url("../images/paper-airplane.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+}
+.quality:after {
+  background-color: rgba(143, 200, 35, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
 }
 .performance {
-  background-image: url("../images/banner_products.jpg");
+  position: relative;
+  z-index: 5;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+}
+.performance:after {
+  background-color: rgba(255, 0, 0, 0.5);
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  z-index: -5;
 }
 .impulse-icons i {
   display: block;

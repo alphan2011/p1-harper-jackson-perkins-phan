@@ -11,9 +11,10 @@
 
 .trans-bg (@color: @red) {
 	position: relative;
+	z-index: 5;
 
 	&:after {
-		background-color: @color;
+		background-color: rgba( @color, .5 );
 		content: '';
 		right: 0;
 		left: 0;
